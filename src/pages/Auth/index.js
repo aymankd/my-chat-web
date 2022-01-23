@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import login from "./login";
-import register from "./register";
-function index() {
+import Login from "./login";
+import Register from "./register";
+function Index() {
   const [authState, setauthState] = useState(true);
-  return <div>hello</div>;
+  return <div>{authState ? <Login /> : <Register />}</div>;
 }
-export default index;
+export default Index;
